@@ -1,0 +1,11 @@
+#shortest code in python
+def isArmstrong(val: int) -> bool:
+
+    parts = [int(_) for _ in str(val)]
+    counter = 0
+    for _ in parts:
+        counter += _**3
+    return (counter == val)
+
+print(isArmstrong(153))
+print(isArmstrong(1253))
